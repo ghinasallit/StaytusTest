@@ -14,6 +14,10 @@ export class HomeComponent implements OnInit {
   }
 
 
+  /**
+   * @description function return all planets that have at least 2 films and at least one resident has reptiles
+   * @param page page number
+   */
   getPlanetData(page): void {
     this.apiService.getPlanets(page).then((res: any) => {
       if (res.results) {
@@ -38,7 +42,7 @@ export class HomeComponent implements OnInit {
 
     });
   }
-  
+
 
   ngOnInit(): void {
     this.getPlanetData(1);
