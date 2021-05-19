@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 my-4 text-center"><h1 class="text-uppercase">Planets</h1></div>
+    <div class="col-md-4" *ngFor="let item of finalPlanetResult ">
+      <mat-card class=" my-2">
+        <mat-card-header class="  bg-primary mb-0">
+          <mat-card-title class="w-100  mb-0 py-2"><h5><i class="fa fa-globe text-white" aria-hidden="true"></i>
+            <a target="_blank " [href]="item.url" class="text-white py-2 mx-2">{{item.name}}</a>
+          </h5></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <h6 class="text-center my-3">Description</h6>
+          <ul>
+            <li>Rotation period: {{item.rotation_period}}</li>
+            <li>Orbital period: {{item.orbital_period}}</li>
+            <li>Diameter: {{item.diameter}}</li>
+            <li>Climate: {{item.climate}}</li>
+            <li>Gravity: {{item.gravity}}</li>
+            <li>Terrain: {{item.terrain}}</li>
+            <li>Surface water: {{item.surface_water}}</li>
+            <li>Population: {{item.population}}</li>
+            <li>Residents: {{item.residents.length}}</li>
+            <li>Films: {{item.films.length}}</li>
+          </ul>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
