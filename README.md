@@ -36,43 +36,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 4- open this link http://localhost:4200 on browser 
 
-## project && APIs
-
-- project work with dynamic data , you can add more collection of questions in "assets/database/collections.json" to show more questions in new step.
-- To add new collection go to "assets/database/collections.json" and add below object.
-
- {
-    "collectionID": 9,
-    "questions": [
-      {
-        "id": 100,
-        "text": "What industries would you prefer to work in?",
-        "options": [
-          {
-            "id": 21,
-            "text": "Construction",
-            "icon": "Construction.png"
-          },{
-            "id": 22,
-            "text": "Hospitality",
-            "icon": "Hospitality.png"
-          },{
-            "id": 23,
-            "text": "Real estate",
-            "icon": "Real estate.png"
-          },{
-            "id": 24,
-            "text": "Tourism",
-            "icon": "Tourism.png"
-          },{
-            "id": 25,
-            "text": "Manufacturing",
-            "icon": "Manufacturing.png"
-          }
-        ]
-      }
-    ]
-  },
 
 now will apeear new step have above questions.
 
